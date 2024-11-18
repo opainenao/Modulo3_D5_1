@@ -1,0 +1,151 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5; /* Fondo suave */
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+h1, h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #007BFF;
+    margin-bottom: 20px;
+}
+
+#TareaInput {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #008000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #00bb2d;
+}
+
+
+section {
+    margin-bottom: 20px;
+}
+
+#totalTareas, #completedTareas {
+    font-weight: bold;
+    color: #007BFF;
+}
+
+
+.TareaHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #e9ecef; 
+    border-radius: 5px;
+    
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.TareaItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s;
+}
+
+.TareaItem:hover {
+    background-color: #f1f1f1; 
+}
+
+.TareaItem span {
+    width: 100px;
+    text-align: left;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.deleteBtn {
+    color: red;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.TareaHeader, .TareaItem {
+    border: 2px solid #007BFF; 
+}
+
+.TareaItem span {
+    flex: 1; 
+    padding-left: 10px;
+}
+
+.TareaItem span.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Alineación vertical */
+    gap: 20px; /* Espacio entre Resumen y Tareas */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.resumen, .tareas {
+    flex: 1; /* Ambas columnas ocupan el mismo espacio */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.resumen {
+    max-width: 300px; /* Ancho fijo opcional */
+}
+
+.tareas {
+    flex: 2; /* Más espacio para la lista de tareas */
+}
